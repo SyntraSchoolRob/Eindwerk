@@ -39,6 +39,18 @@ module.exports = function (env, argv) {
         chunks: ['app'],
         template: path.resolve('./src/product.html')
       }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Checkout',
+        filename:'checkout.html',
+        chunks: ['app'],
+        template: path.resolve('./src/checkout.html')
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Cart',
+        filename:'cart.html',
+        chunks: ['app'],
+        template: path.resolve('./src/cart.html')
+      }),
       new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
