@@ -21,17 +21,23 @@ module.exports = function (env, argv) {
     plugins: [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        title: 'Webpack starter project',
+        title: 'Edumodo - Welcome',
         filename:'index.html',
         chunks: ['app'],
         template: path.resolve('./src/index.html')
 
       }),
       new HtmlWebpackPlugin({
-        title: 'Webpack starter project',
+        title: 'Edumodo - Shop',
         filename:'shop.html',
         chunks: ['app'],
         template: path.resolve('./src/shop.html')
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Product',
+        filename:'product.html',
+        chunks: ['app'],
+        template: path.resolve('./src/product.html')
       }),
       new MiniCssExtractPlugin({
         filename: "[name].css",

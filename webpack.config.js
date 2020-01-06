@@ -33,18 +33,23 @@ module.exports = function(){
         { from: 'src/images', to: 'dist' },
       ]),
       new HtmlWebpackPlugin({
-        title: 'Webpack starter project',
+        title: 'Edumodo - Welcome',
         filename:'index.html',
         chunks: ['app'],
        template: path.resolve('./src/index.html')
 
       }),
       new HtmlWebpackPlugin({
-
-        title: 'My Awesome application',
+        title: 'Edumodo - Shop',
         template: path.resolve('./src/shop.html'),
         chunks: ['app'],
         filename: 'shop.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Product',
+        template: path.resolve('./src/product.html'),
+        chunks: ['app'],
+        filename: 'product.html'
       }),
 
       new webpack.HotModuleReplacementPlugin()

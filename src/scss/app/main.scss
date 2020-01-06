@@ -28,6 +28,15 @@
 .c5a9{
   color: #5a6e79;
 }
+.c9fb{
+  color: #9fbfff;
+}
+.cf36{
+  color: #f36b7f;
+}
+.cf8c{
+  background-color: #f8cf61;
+}
 .footGray{
   color: #c5c7ca;
 }
@@ -40,6 +49,9 @@
 }
 .bgcopy{
   background-color: #1d232e;
+}
+.bgf9{
+  background-color: #f9f9f9;
 }
 //font-sizes
 .fs14{
@@ -67,6 +79,10 @@
 .hnone:hover{
   text-decoration: none;
 }
+//line
+.border-top-yellow{
+  border-top: 2px solid #f8cf61;
+}
 //background img
 .bgShop{
   background-image: url("/images/shopbg.png");
@@ -84,6 +100,9 @@
 }
 .maxWidth1150{
   max-width: 1150px;
+}
+.width125{
+  width: 125px;
 }
 //body
 body{
@@ -255,8 +274,10 @@ $color: #ffc178;
   position: absolute;
   z-index: -1;
 }
-//footer
-
+//paddings
+.pb-10{
+  padding-bottom: 10%;
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .fs-39{
