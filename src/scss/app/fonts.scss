@@ -1,0 +1,34 @@
+/**lokale fonts**/
+$fontface-path:'../fonts';
+@font-face {
+  font-family: MyrProRegular;
+  src: url('#{$fontface-path}/MyriadPro-Regular.ttf');
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url('#{$fontface-path}/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: WorkSansBold;
+  src: url('#{$fontface-path}/work-sans.bold.ttf');
+}
+@font-face {
+  font-family: montserratLight;
+  src: url('#{$fontface-path}/montserrat-light.ttf');
+}
+@font-face {
+  font-family: worksansMedium;
+  src: url('#{$fontface-path}/worksans-medium.ttf');
+}
+@font-face {
+  font-family: worksansRegular;
+  src: url('#{$fontface-path}/worksans-regular.ttf');
+}
+
+
+/*fontawesome**/
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
