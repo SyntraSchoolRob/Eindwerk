@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://www.syntrawestcloud.be/FullStack/Robbe/eindwerk/cart.html/" />
     <meta property="og:site_name" content="Edumodo" />
 </head>
-<body itemscope itemtype="https://schema.org/WebPage">
+<body itemscope itemtype="https://schema.org/WebPage" class="bg-Beige">
 <header class="p-0">
     <div class="maxWidth mx-auto">
         <nav class="navbar navbar-expand-lg navbar-light maxWidth1150 mx-auto" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -57,7 +57,7 @@
 <!--https://bootstrapious.com/p/bootstrap-shopping-cart-->
 <section class=" pb-5">
     <h1 class="cBeige montserratB font-s-24 fs-39 d-flex justify-content-center pt-5 pb-5">Shoppingcart</h1>
-    <div class="container-fluid rounded shadow-sm mb-5 maxWidth1150 mx-auto p-md-4">
+    <div class="container-fluid rounded shadow-sm mb-5 maxWidth1150 mx-auto p-md-4 bg-white">
         <!--        1 rij = volledig product-->
         <div class="row border-bottom pt-2">
             <div class="col-5 col-sm-3 col-md-2">
@@ -99,10 +99,10 @@
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 p-lg-4 pt-3 pt-sm-0">
-                <form action="" id="amounntProduct2" class="d-flex">
-                    <label for="amounntProduct2" class="pr-2">Amount</label>
+                <form action="" id="product2" class="d-flex">
+                    <label for="product2" class="pr-2">Amount</label>
                     <div class="d-flex">
-                        <select class="form-control">
+                        <select class="form-control" id="product2">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -131,7 +131,7 @@
                 <form action="" id="amounntProductx" class="d-flex">
                     <label for="amounntProductx" class="pr-2">Amount</label>
                     <div class="d-flex">
-                        <select class="form-control">
+                        <select class="form-control" id="amounntProductx">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -148,13 +148,40 @@
         </div>
     </div>
 </section>
-<section class="container-fluid">
-    <div class="row">
-        <div class="col col-md-6">
+<section class="container-fluid mb-5 p-0">
+    <div class="row row p-2 pt-4 pt-md-0 p-md-4 bg-white rounded shadow maxWidth1150 mx-auto">
 
+        <div class="col-12 col-md-6 p-md-4">
+            <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Coupon code</p>
+            <div class="pt-2 px-4 pb-4">
+                <p class="font-italic mb-4">If you have a coupon code, you can enter your code here</p>
+                <form>
+
+                </form>
+            </div>
+            <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Add information</p>
+            <form class="pt-2 px-4 pb-4">
+                <div class="form-group">
+                    <label for="addInformation" class="font-italic mb-2">If you have any additional information we should know about your order then you can leave it in the box below.</label>
+                    <textarea name="t" cols="30" rows="2" class="form-control" id="addInformation"></textarea>
+                </div>
+            </form>
         </div>
-        <div class="col col-md-6">
-
+        <div class="col-12 col-md-6 p-md-4">
+            <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Order summary</p>
+            <div class="pt-2 px-4 pb-4">
+                <p class="font-italic mb-4">Shipping and additional costs are calculated based on your location and residency</p>
+                <form>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal</strong><strong>$849.00</strong></li>
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipment</strong><strong>$0.00</strong></li>
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                            <p class="font-weight-bold">$400.00</p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -198,7 +225,7 @@
         </div>
         <div class="row maxWidth mx-auto bgcopy">
             <div class="col maxWidth1150 mx-auto d-md-flex pt-2">
-                <p itemprop="copyrightHolder" class="fs14">&copy; 2019 Edumodo</p>
+                <p itemprop="copyrightHolder" class="fs14">&copy; 2020 Edumodo</p>
                 <p class="fs14 pl-md-3 m-0">Privacy policy</p>
                 <p class="fs14 pl-md-3 m-0 pb-3">Terms of use</p>
             </div>
