@@ -63,6 +63,24 @@ module.exports = function(){
         chunks: ['app'],
         filename: 'cart.html'
       }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Contact',
+        template: path.resolve('./src/contact.html'),
+        chunks: ['app'],
+        filename: 'contact.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - Account',
+        template: path.resolve('./src/account.html'),
+        chunks: ['app'],
+        filename: 'account.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Edumodo - 404',
+        template: path.resolve('./src/404.html'),
+        chunks: ['app'],
+        filename: '404.html'
+      }),
 
       new webpack.HotModuleReplacementPlugin()
     ],
