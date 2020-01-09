@@ -22,7 +22,7 @@
     <div class="maxWidth mx-auto">
         <nav class="navbar navbar-expand-lg navbar-light maxWidth1150 mx-auto" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <a itemprop="url" class="btn btnShop d-lg-none" href="shop.html">Shop</a>
-            <a itemprop="url" class="navbar-brand" href="index.html"><img itemprop="image" src="images/headerLogo.png" alt="logo"></a>
+            <a itemprop="url" class="navbar-brand" href="index.html"><img itemprop="image" src="images/headerLogo.png" alt="edumodo logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,7 +61,7 @@
         <!--        1 rij = volledig product-->
         <div class="row border-bottom pt-2">
             <div class="col-5 col-sm-3 col-md-2">
-                <img src="images/shopImg.png" alt="" class="img-fluid">
+                <img src="images/shopImg.png" alt="product" class="img-fluid">
             </div>
             <div class="col-7 col-sm-3 col-md-6 p-md-3 d-flex align-items-center">
                 <div>
@@ -70,10 +70,10 @@
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 p-lg-4 pt-3 pt-sm-0">
-                <form action="" id="amounntProduct1" class="d-flex">
-                    <label for="amounntProduct1" class="pr-2">Amount</label>
+                <form class="d-flex">
+                    <label for="product1" class="pr-2">Amount</label>
                     <div class="d-flex">
-                        <select class="form-control">
+                        <select class="form-control" id="product1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -88,9 +88,10 @@
                 <p class="font-weight-bold ">$849,99</p>
             </div>
         </div>
+<!--        einde product rij-->
         <div class="row border-bottom pt-2">
             <div class="col-5 col-sm-3 col-md-2">
-                <img src="images/shopImg.png" alt="" class="img-fluid">
+                <img src="images/shopImg.png" alt="product" class="img-fluid">
             </div>
             <div class="col-7 col-sm-3 col-md-6 p-md-3 d-flex align-items-center">
                 <div>
@@ -99,7 +100,7 @@
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 p-lg-4 pt-3 pt-sm-0">
-                <form action="" id="product2" class="d-flex">
+                <form class="d-flex">
                     <label for="product2" class="pr-2">Amount</label>
                     <div class="d-flex">
                         <select class="form-control" id="product2">
@@ -114,12 +115,12 @@
                 <i class="fas fa-trash-alt pt-2 pl-2"></i>
             </div>
             <div class="col-6 col-sm-2 col-md-1 d-flex align-items-center">
-                <p class="font-weight-bold ">$849,99</p>
+                <p class="font-weight-bold ">$998,99</p>
             </div>
         </div>
         <div class="row border-bottom pt-2">
             <div class="col-5 col-sm-3 col-md-2">
-                <img src="images/shopImg.png" alt="" class="img-fluid">
+                <img src="images/shopImg.png" alt="product" class="img-fluid">
             </div>
             <div class="col-7 col-sm-3 col-md-6 p-md-3 d-flex align-items-center">
                 <div>
@@ -128,10 +129,10 @@
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-3 p-lg-4 pt-3 pt-sm-0">
-                <form action="" id="amounntProductx" class="d-flex">
-                    <label for="amounntProductx" class="pr-2">Amount</label>
+                <form class="d-flex">
+                    <label for="product3" class="pr-2">Amount</label>
                     <div class="d-flex">
-                        <select class="form-control" id="amounntProductx">
+                        <select class="form-control" id="product3">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -148,15 +149,18 @@
         </div>
     </div>
 </section>
-<section class="container-fluid mb-5 p-0">
+<div class="container-fluid mb-5 p-0">
     <div class="row row p-2 pt-4 pt-md-0 p-md-4 bg-white rounded shadow maxWidth1150 mx-auto">
 
         <div class="col-12 col-md-6 p-md-4">
             <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Coupon code</p>
-            <div class="pt-2 px-4 pb-4">
-                <p class="font-italic mb-4">If you have a coupon code, you can enter your code here</p>
-                <form>
-
+            <div >
+                <form class="pt-2 px-4 pb-4">
+                    <label for="couponCode" class="font-italic mb-4">If you have a coupon code, you can enter your code here</label>
+                    <div class="d-lg-flex">
+                        <input type="text" class="form-control rounded-pill py-2 mr-3" placeholder="Apply coupon" id="couponCode">
+                        <button type="button" class="btn btn-dark rounded-pill py-2 btn-block mt-3 mt-lg-0"><i class="fas fa-gift pr-2"></i>Apply coupon</button>
+                    </div>
                 </form>
             </div>
             <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Add information</p>
@@ -171,20 +175,17 @@
             <p class="bg-light rounded-pill pl-4 p-3 text-uppercase font-weight-bold">Order summary</p>
             <div class="pt-2 px-4 pb-4">
                 <p class="font-italic mb-4">Shipping and additional costs are calculated based on your location and residency</p>
-                <form>
-                    <ul class="list-unstyled mb-4">
-                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal</strong><strong>$849.00</strong></li>
-                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipment</strong><strong>$0.00</strong></li>
-                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
-                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                            <p class="font-weight-bold">$400.00</p>
-                        </li>
-                    </ul>
-                </form>
+                <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal</strong><strong>$849.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipment</strong><strong>$0.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong><strong class="font-s-24">$849.99</strong></li>
+                    <li class="pt-4"><a href="checkout.html" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to checkout <i class="fas fa-arrow-right pl-2"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>
-</section>
+</div>
 <footer class="container-fluid p-0" itemscope itemtype="https://schema.org/WPFooter">
     <div class="maxWidth mx-auto bgfooter rounded-top">
         <div class="row maxWidth1150 mx-auto pt-5 pb-5">
