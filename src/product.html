@@ -94,7 +94,8 @@
             <form>
                 <label for="quantity" ></label>
                 <div class="form-group width125 pb-2" id="quantity">
-                    <select class="form-control" id="productForm">
+                    <label for="productAmount"></label>
+                    <select class="form-control" id="productAmount">
                         <option selected="">Quantity</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -107,24 +108,40 @@
             </form>
         </div>
     </div>
-    <div class="row border-top-yellow pb-10">
+    <div class="row border-top-yellow">
         <div class="col-12 col-md-6">
             <h2 class="bg-light rounded-pill fs18 mt-5 p-2 bgf9 pl-5"><i class="fas fa-comment pr-2"></i>Description</h2>
             <p class="p-2">The smartschool suite is suitable for any type of school. Whether it is for a primary, secondary, high school or university, this software is made with the highest industry leading standards providing your teachers and students with the best software they can imagine.</p>
         </div>
         <div class="col-12 col-md-6">
-            <h2 class="bg-light rounded-pill fs18 mt-md-5 p-2 bgf9 pl-5"><i class="fas fa-truck pr-2"></i>Delivery</h2>
+            <h2 class="bg-light rounded-pill fs18 p-2 mt-md-5 bgf9 pl-5"><i class="fas fa-truck pr-2"></i>Delivery</h2>
             <p class="p-2">The software gets delivered by email and is immediately available.</p>
             <h2 class="bg-light rounded-pill fs18 mt-2 p-2 bgf9 pl-5"><i class="fas fa-life-ring pr-2"></i>Support</h2>
             <p class="p-2">To get support contact info@edumodo.com</p>
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <h3 class="bg-light rounded-pill fs18 mt-5 p-2 bgf9 pl-5"><i class="fas fa-comment pr-2"></i>Reviews</h3>
+        <div class="col-12">
+            <h3 class="bg-light rounded-pill fs18 mt-md-5 p-2 bgf9 pl-5"><i class="fas fa-th-large pr-2"></i>Other categories</h3>
+            <div class="row">
+                <div class="col flex-wrap justify-content-center">
+                    <img src="images/engineering.png" alt="engineering" class="img-fluid">
+                    <img src="images/accounting.png" alt="accounting" class="img-fluid">
+                    <img src="images/creative.png" alt="creative" class="img-fluid">
+                    <img src="images/design.png" alt="design" class=" img-fluid">
+                    <img src="images/physics.png" alt="physics" class=" img-fluid">
+                    <img src="images/chemistry.png" alt="chemistry" class=" img-fluid">
+                </div>
+            </div>
+
         </div>
     </div>
+
+
 </section>
+<div class="fixed-bottom d-none d-md-block d-md-flex justify-content-md-end pr-2 pb-0">
+    <a href="contact.html"><img src="images/contactSup.png" alt="support" class="d-none d-md-block"></a>
+</div>
 <footer class="container-fluid mt-lg-5 p-0" itemscope itemtype="https://schema.org/WPFooter">
     <div class="maxWidth mx-auto bgfooter rounded-top">
         <div class="row maxWidth1150 mx-auto pt-5 pb-5">
@@ -156,7 +173,7 @@
                         <div class="input-group">
                             <input type="email" class="form-control bg-white" placeholder="email" aria-label="Subscribe to our newsletter">
                             <span class="input-group-btn">
-                                    <button class="btn rounded-0 bgfootBut text-white" type="submit" name="btnNews">Subscribe</button>
+                                <button class="btn rounded-0 bgfootBut text-white" type="submit" name="btnNews">Subscribe</button>
                             </span>
                         </div>
                     </form>

@@ -83,15 +83,13 @@
   text-decoration: underline;
   color: #5a6e79;
 }
+.hcBeige:hover{
+  color: #ffc178;
+}
 //shopcard effect
-.boxjeP .boxjeY {
+.boxjeP .boxjeY .boxjeR {
   position: relative;
   width: 100%;
-}
-.cardeffect{
-  display: block;
-  width: 100%;
-  height: auto;
 }
 //overlay verschillende kleuren shop
 .overlayP {
@@ -118,10 +116,25 @@
   transition: .5s ease;
   background-color: #f8cf61;
 }
+.overlayR {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f36b7f;
+}
 .boxjeP:hover .overlayP {
   opacity: 1;
 }
 .boxjeY:hover .overlayY {
+  opacity: 1;
+}
+.boxjeR:hover .overlayR {
   opacity: 1;
 }
 .textOverlay {
@@ -336,6 +349,11 @@ $color: #ffc178;
 //paddings
 .pb-10{
   padding-bottom: 10%;
+}
+#imageCart{
+  position: absolute;
+  margin-left: -32px;
+  margin-top: -75px;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
