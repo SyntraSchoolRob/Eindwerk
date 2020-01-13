@@ -79,6 +79,62 @@
 .hnone:hover{
   text-decoration: none;
 }
+.hline:hover{
+  text-decoration: underline;
+  color: #5a6e79;
+}
+//shopcard effect
+.boxjeP .boxjeY {
+  position: relative;
+  width: 100%;
+}
+.cardeffect{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+//overlay verschillende kleuren shop
+.overlayP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9fbfff;
+}
+.overlayY {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f8cf61;
+}
+.boxjeP:hover .overlayP {
+  opacity: 1;
+}
+.boxjeY:hover .overlayY {
+  opacity: 1;
+}
+.textOverlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 //lines
 .border-top-yellow{
   border-top: 2px solid #f8cf61;

@@ -19,7 +19,7 @@
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
 <header class="p-0">
-    <div class="maxWidth mx-auto">
+    <div class="maxWidth mx-auto border-bottom">
         <nav class="navbar navbar-expand-lg navbar-light maxWidth1150 mx-auto" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <a itemprop="url" class="btn btnShop d-lg-none" href="shop.html">Shop</a>
             <a itemprop="url" class="navbar-brand" href="index.html"><img itemprop="image" src="images/headerLogo.png" alt="logo"></a>
@@ -69,14 +69,43 @@
             <form>
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             </form>
-            <div class="list-group">
-                <div class="fs18 pt-4 pb-1">Software categories</div>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Engineering</a>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Accounting</a>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Technology</a>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Design</a>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Physics</a>
-                <a href="#" class="list-group-item list-group-item-action p-2 pl-4 fs14">Chemistry</a>
+            <p class="fs18 pt-4 pb-1 border-bottom">Software categories</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catEng">
+                <label class="form-check-label " for="catEng">Engineering(1)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catAcc">
+                <label class="form-check-label" for="catAcc">Accounting(1)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catTech">
+                <label class="form-check-label" for="catTech">Technology(9)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catDes">
+                <label class="form-check-label" for="catDes">Design(1)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catPhys">
+                <label class="form-check-label" for="catPhys">Physics(1)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catChem">
+                <label class="form-check-label" for="catChem">Chemistry(1)</label>
+            </div>
+            <p class="fs18 pt-4 pb-1 border-bottom">School type</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catPrimary">
+                <label class="form-check-label " for="catPrimary">Primary(7)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catSec">
+                <label class="form-check-label " for="catSec">Secondary(5)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="catUniversity">
+                <label class="form-check-label " for="catUniversity">University(9)</label>
             </div>
             <div>
                 <label for="shopRange" class="p-0 fs18 pt-3">Price</label>
@@ -145,11 +174,14 @@
                         <p class="fs18 font-weight-bold text-center card-text pb-3 c5a9">$99.99 monthly</p>
                     </div></a>
                 </div>
-                <div class="col-12 col-md-4 pt-4">
-                    <a href="product.html" class="hnone"><div class="card">
+                <div class="col-12 col-md-4 pt-4 boxjeP">
+                    <a href="product.html" class="hnone"><div class="card cardeffect">
                         <img src="images/shopImg.png" alt="product" class="img-fluid card-img-top">
                         <p class="montserratL text-center m-0 card-title c5a9">Chemistry suite</p>
                         <p class="fs18 font-weight-bold text-center card-text pb-3 c5a9 font-italic">$1299.99</p>
+                        <div class="overlayP">
+                            <div class="textOverlay">Chemistry <i class="fas fa-arrow-right pl-2"></i></div>
+                        </div>
                     </div></a>
                 </div>
             </div>
