@@ -40,6 +40,7 @@
 .bc9fb{
   background-color: #9fbfff;
 }
+
 .footGray{
   color: #c5c7ca;
 }
@@ -55,6 +56,9 @@
 }
 .bgf9{
   background-color: #f9f9f9;
+}
+.bgOragne{
+  background-color: #ffc178;
 }
 //font-sizes
 .fs14{
@@ -374,6 +378,9 @@ $color: #ffc178;
   }
   .fs-md-40{
     font-size: 2.5rem;
+  }
+  .mt-md-83{
+    margin-top: -83px;
   }
 }
 // Large devices (desktops, 992px and up)
