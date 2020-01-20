@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <title>Edumodo - Checkout</title>
+    <meta name="description" content="Edumodo - Checkout: Simple payments for your orders.">
+    <meta name="author" content="Robbe">
+    <meta name="keywords" content="education, innovation, software, security, shop, checkout, buy, products, licenses">
+    <link rel="icon" href="images/headerLogo.png">
+    <link rel="canonical" href="https://www.syntrawestcloud.be/FullStack/Robbe/eindwerk/checkout.html/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Edumodo - Checkout" />
+    <meta property="og:description" content="Edumodo - Checkout: Simple payments for your orders." />
+    <meta property="og:url" content="https://www.syntrawestcloud.be/FullStack/Robbe/eindwerk/checkout.html/" />
+    <meta property="og:site_name" content="Edumodo" />
+<link href="app.css" rel="stylesheet"></head>
+<body itemscope itemtype="https://schema.org/WebPage" class="bg-Beige">
+<header class="p-0">
+    <div class="maxWidth mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light maxWidth1150 mx-auto" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a itemprop="url" class="btn btnShop d-lg-none" href="shop.html">Shop</a>
+            <a itemprop="url" class="navbar-brand" href="index.html"><img itemprop="image" src="images/headerLogo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navUlStyle">
+                    <li class="nav-item">
+                        <a itemprop="url" class="nav-link menuStyle" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pl-lg-1">
+                        <a itemprop="url" class="nav-link menuStyle" href="account.html">Account</a>
+                    </li>
+                    <li class="nav-item pl-lg-1">
+                        <a itemprop="url" class="nav-link menuStyle" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item pl-lg-1">
+                        <a itemprop="url" class="nav-link menuStyle" href="checkout.html">Checkout</a>
+                    </li>
+                    <li class="nav-item pl-lg-1">
+                        <a itemprop="url" class="nav-link menuStyle" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item pl-lg-1">
+                        <a itemprop="url" class="btn btnShop d-none d-lg-block" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a itemprop="url" class="nav-link menuStyle" href="cart.html">Cart <i class="fas fa-shopping-basket"><span class="badge ">2</span></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="container-fluid p-0" itemscope itemtype="https://schema.org/CheckoutPage">
+    <h1 class="cBeige montserratB font-s-24 fs-39 d-flex justify-content-center pt-5 pb-5" itemprop="headline">Checkout</h1>
+    <div class="row rounded shadow-sm mb-5 maxWidth1150 mx-auto p-md-4 bg-white">
+        <div class="col-12 col-md-6 p-4">
+            <p class="bg-light rounded-pill pl-4 p-2 text-uppercase font-weight-bold"><i class="fas fa-file-alt pr-3"></i>Billing details</p>
+            <p class="font-italic mb-4 pl-sm-4">We'll never share your details with anyone else!</p>
+            <form class="pl-sm-4">
+                <div class="d-sm-flex">
+                    <div class="form-group">
+                        <label for="firstName" class="pl-2">First name</label>
+                        <input type="text" class="form-control rounded-pill" id="firstName">
+                    </div>
+                    <div class="form-group pl-sm-3">
+                        <label for="lastName" class="pl-2">Last name</label>
+                        <input type="text" class="form-control rounded-pill d-block" id="lastName">
+                    </div>
+                </div>
+                <div class="d-sm-flex">
+                    <div class="form-group">
+                        <label for="companyName" class="pl-2">Company(optional)</label>
+                        <input type="text" class="form-control rounded-pill" id="companyName">
+                    </div>
+                    <div class="form-group pl-sm-3">
+                        <label for="vatNumber" class="pl-2">VAT-number(optional)</label>
+                        <input type="number" class="form-control rounded-pill d-block" id="vatNumber">
+                    </div>
+                </div>
+                <div class="form-group mt-2 pr-md-5 pb-2">
+                    <label for="emailUser" class="pl-2">Email-address</label>
+                    <input type="email" class="form-control rounded-pill" id="emailUser" placeholder="you@example.com">
+                </div>
+                <p class="bg-light rounded-pill pl-4 p-2 text-uppercase font-weight-bold"><i class="fas fa-map-marked-alt pr-3"></i>Delivery address</p>
+                <div class="form-group pr-md-5">
+                    <label for="inputAddress" class="pl-2">Address</label>
+                    <input type="text" class="form-control rounded-pill" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row pr-sm-5">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity" class="pl-2">City</label>
+                        <input type="text" class="form-control rounded-pill" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState" class="pl-2">State</label>
+                        <select id="inputState" class="form-control rounded-pill">
+                            <option selected>Choose...</option>
+                            <option>California</option>
+                            <option>Florida</option>
+                            <option>State New York</option>
+                            <option>State Washington</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row pr-sm-5">
+                    <div class="form-group col-md-5">
+                        <label for="inputZip" class="pl-2">Zip</label>
+                        <input type="text" class="form-control rounded-pill" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="country" class="pl-2">Country</label>
+                        <select id="country" class="form-control rounded-pill">
+                            <option selected>Choose...</option>
+                            <option>United States</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-md-6 p-4">
+            <p class="bg-light rounded-pill pl-4 p-2 text-uppercase font-weight-bold"><i class="fas fa-truck pr-3"></i>Delivery method</p>
+            <p class="font-italic mb-4 pl-sm-4">Choose you're delivery method. You can choose to get your license code directly through email or we can send it through the post</p>
+            <form class="pl-sm-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option1" id="checkboxEmail" name="radioDelivery">
+                    <label class="form-check-label" for="checkboxEmail">Send me my licensce code through email</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option2" id="checkboxPost"  name="radioDelivery">
+                    <label class="form-check-label" for="checkboxPost">Send me my licensce code through the post</label>
+                </div>
+            </form>
+            <p class="bg-light rounded-pill pl-4 p-2 text-uppercase font-weight-bold mt-5"><i class="fas fa-money-check-alt pr-3"></i>Payment options</p>
+            <p class="font-italic mb-2 pl-sm-4">Choose you're preferred payment option</p>
+            <p class="mb-4 pl-sm-4"><i class="fas fa-lock pr-2"></i>Credit / debit card</p>
+            <form class="pl-sm-4 pr-md-5">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="cardNumber" class="pl-2">Card number</label>
+                        <input type="number" class="form-control rounded-pill" id="cardNumber" placeholder="Enter card number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="cardDate" class="pl-2">Expiration date</label>
+                        <input type="text" class="form-control rounded-pill" id="cardDate" placeholder="MM / YY">
+                    </div>
+                    <div class="form-group col-12 col-md-8">
+                        <label for="secCode" class="pl-2">Security code (CVV)</label>
+                        <input type="number" class="form-control rounded-pill" id="secCode" placeholder="XXX">
+                    </div>
+                </div>
+            </form>
+            <form class="pl-sm-4 mt-5">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="terms">
+                    <label class="form-check-label" for="terms">I have read and agree to the websites <span class="underline">terms and conditions</span> and our <span class="underline"> privacy policy</span></label>
+                </div>
+            </form>
+            <a href="checkout.html" class="btn btn-dark rounded-pill py-2 btn-block mt-3">Fulfill your order <i class="fas fa-check pl-2"></i></a>
+        </div>
+    </div>
+</section>
+<footer class="container-fluid p-0 pt-5" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="maxWidth mx-auto bgfooter rounded-top">
+        <div class="row maxWidth1150 mx-auto pt-5 pb-5">
+            <div class="col-12 col-md-3">
+                <img itemprop="img" src="images/footer.png" alt="logo" class="img-fluid">
+                <p class="pt-2 fs14">Edumodo focuses on creating magnificent education websites with ease. Take the lead in the race with learned</p>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <p class="text-white footGray fs1-2rem">Community</p>
+                <a itemprop="url" class="footpGray" href="index.html"><p>Home</p></a>
+                <a itemprop="url" class="footpGray" href="account.html"><p>Account</p></a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <p class="text-white footGray fs1-2rem">Shop</p>
+                <a itemprop="url" class="footpGray" href="shop.html"><p>Go shopping</p></a>
+                <a itemprop="url" class="footpGray" href="product.html"><p>Product</p></a>
+                <a itemprop="url" class="footpGray" href="checkout.html"><p>Checkout</p></a>
+            </div>
+            <div class="col-12 col-sm-4 col-md-2">
+                <p class="text-white footGray fs1-2rem">Support</p>
+                <a itemprop="url" class="footpGray" href="contact.html"><p>Get help</p></a>
+                <a itemprop="url" class="footpGray" href="cart.html"><p>Shoppingcart</p></a>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="content">
+                    <form>
+                        <p class="text-white footGray fs1-2rem">Newsletter</p>
+                        <p>Follow all our latest news updates</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-white" placeholder="email" aria-label="Subscribe to our newsletter">
+                            <span class="input-group-btn">
+                                    <button class="btn rounded-0 bgfootBut text-white" type="submit" name="btnNews">Subscribe</button>
+                             </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row maxWidth mx-auto bgcopy">
+            <div class="col maxWidth1150 mx-auto d-md-flex pt-2">
+                <p itemprop="copyrightHolder" class="fs14">&copy; 2020 Edumodo</p>
+                <p class="fs14 pl-md-3 m-0">Privacy policy</p>
+                <p class="fs14 pl-md-3 m-0 pb-3">Terms of use</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="app.js"></script></body>
+</html>
