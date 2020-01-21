@@ -16,12 +16,8 @@
     <meta property="og:description" content="Edumodo - Webshop - The best software of the market." />
     <meta property="og:url" content="https://www.syntrawestcloud.be/FullStack/Robbe/eindwerk/shop.html/" />
     <meta property="og:site_name" content="Edumodo" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link href="app.css" rel="stylesheet"></head>
-<body itemscope itemtype="https://schema.org/WebPage" class="">
+<body itemscope itemtype="https://schema.org/WebPage">
 <header class="p-0">
     <div class="maxWidth mx-auto border-bottom">
         <nav class="navbar navbar-expand-lg navbar-light maxWidth1150 mx-auto" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -71,8 +67,7 @@
         <div class="col-12 col-sm-4 col-md-3 p-3 p-md-4 border-right rounded">
             <h1 class="fs14">Shop</h1>
             <form>
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             <p class="fs18 pt-4 pb-1 border-bottom">Software categories</p>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="catEng">
@@ -111,11 +106,9 @@
                 <input class="form-check-input" type="checkbox" value="" id="catUniversity">
                 <label class="form-check-label hcBeige" for="catUniversity">University(9)</label>
             </div>
-            <div>
-                <label for="amount" class="fs18 pt-4">Price range</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-            </div>
-            <div id="slider-range"></div>
+             <p class="fs18 pt-4 pb-1 border-bottom">Price range</p>
+             <div class="regular-slider mt-5 mb-5"></div>
+            </form>
         </div>
         <div class="col-12 col-sm-8 col-md-9 p-3 pl-sm-5 rounded">
             <div class="row">
@@ -264,6 +257,5 @@
         </div>
     </div>
 </footer>
-<script>$(function(){$("#slider-range").slider({range:!0,min:1,max:1e3,values:[75,300],slide:function(e,a){$("#amount").val("$"+a.values[0]+" - $"+a.values[1])}}),$("#amount").val("$"+$("#slider-range").slider("values",0)+" - $"+$("#slider-range").slider("values",1))});</script>
 <script type="text/javascript" src="app.js"></script></body>
 </html>
